@@ -3,8 +3,8 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('HELLO WORLD')
+    return render(request, 'blog/home.html')
 
 
-def about(response):
-    return HttpResponse('ABOUT PAGE')
+def about(request):
+    return render(request, 'blog/about.html')
